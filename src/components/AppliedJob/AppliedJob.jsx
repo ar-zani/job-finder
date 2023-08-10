@@ -28,10 +28,11 @@ const AppliedJob = () => {
 
     return (
         <div>
-            <h2 className="py-20 bg-slate-50 text-3xl font-bold text-center">Applied Jobs</h2>
+            <h2 className="py-20 bg-slate-50 text-3xl font-bold text-center">
+                {appliedJobs.length===0 ? 'No job applications have been made' :'Applied Jobs'}</h2>
             <div className='w-8/12 m-auto grid gap-8 mt-10'>
                 {
-                    appliedJobs.length && appliedJobs.map((job,idx)=> <AppliedJobCard key={idx} data={job}></AppliedJobCard>)
+                    appliedJobs.map((job,idx)=> <AppliedJobCard key={idx} data={job}></AppliedJobCard>)
                 }
             </div>
 

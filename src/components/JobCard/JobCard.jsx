@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 
 const JobCard = (props) => {
-    console.log(props.data);
     // eslint-disable-next-line react/prop-types
     const{id,logo, job_title, company_name, work_location, job_type,contact, salary} = props.data;
     return (
