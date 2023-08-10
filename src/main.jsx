@@ -8,6 +8,10 @@ import {
 import Main from './components/Layout/main.jsx';
 import Home from './components/Layout/Home';
 import JobDetails from './components/JobDetails/JobDetails';
+import AppliedJob from './components/AppliedJob/AppliedJob';
+import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
+import NotFound from './components/NotFound/NotFound';
 
 const router = createBrowserRouter([
   {
@@ -19,9 +23,29 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
+        path: "home",
+        element: <Home></Home>
+      },
+      {
+        path: "applied-job",
+        element: <AppliedJob></AppliedJob>
+      },
+      {
         path:"jobs/:jobId",
         element: <JobDetails></JobDetails>
-      }
+      },
+      {
+        path:"statistics",
+        element: <Statistics></Statistics>
+      },
+      {
+        path:"blog",
+        element: <Blog></Blog>
+      },
+      {
+        path:"*",
+        element: <NotFound></NotFound>
+      },
     ]
   }
 ])

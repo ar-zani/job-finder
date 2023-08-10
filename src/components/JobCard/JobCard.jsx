@@ -20,7 +20,7 @@ const JobCard = (props) => {
                 <p>{contact.address}</p>
                 <p>Salary: {salary}</p>
             </div>
-            <Link to={`jobs/${id}`}><button  className='absolute bottom-6 bg-violet-400 px-3 py-1.5 rounded text-white font-semibold text-xl'>View Details</button></Link>
+            <Link to={`/jobs/${id}`}><button  className='absolute bottom-6 bg-violet-400 px-3 py-1.5 rounded text-white font-semibold text-xl'>View Details</button></Link>
         </div>
     );
 };

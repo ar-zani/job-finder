@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { addToDb, getDatabaseData } from "../../utilities/databaseManager";
 
 
 const JobDetails = () => {
@@ -16,6 +17,14 @@ const JobDetails = () => {
         }
         loadData();
     },[])
+    
+    const handleAdd = (id)=>{
+        const storedId = getDatabaseData();
+        if(storedId[id]) alert('already applied');
+        else{
+            addToDb(id);
+        }
+    }
     return (
         <div>
             <h2 className="py-20 bg-slate-50 text-3xl font-bold text-center">Job Details</h2>
@@ -38,7 +47,7 @@ const JobDetails = () => {
                     <p className="text-lg font-semibold pb-3">Email: <span className="text-base font-normal text-gray-400">{jobDetails.contact?.email}</span></p>
                     <p className="text-lg font-semibold pb-3">Address: <span className="text-base font-normal text-gray-400">{jobDetails.contact?.address}</span></p>
                     </div>
-                    <button onClick={()=> setSeeMore(true)} className='w-full mt-4 bg-violet-400 px-4 py-2.5 rounded-md text-white font-semibold text-xl'>Apply Now</button>
+                    <button onClick={()=> handleAdd(jobDetails.id)} className='w-full mt-4 bg-violet-400 px-4 py-2.5 rounded-md text-white font-semibold text-xl'>Apply Now</button>
 
                 </div>
             </div>
