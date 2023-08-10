@@ -1,9 +1,10 @@
-import React from 'react';
+import { Link } from "react-router-dom";
+
 
 const JobCard = (props) => {
     console.log(props.data);
     // eslint-disable-next-line react/prop-types
-    const{logo, job_title, company_name, work_location, job_type,contact, salary} = props.data;
+    const{id,logo, job_title, company_name, work_location, job_type,contact, salary} = props.data;
     return (
         <div className='p-6 pb-20 shadow relative'>
             <div>
@@ -19,7 +20,7 @@ const JobCard = (props) => {
                 <p>{contact.address}</p>
                 <p>Salary: {salary}</p>
             </div>
-            <button className='absolute bottom-6 bg-violet-400 px-3 py-1.5 rounded text-white font-semibold text-xl'>View Details</button>
+            <Link to={`jobs/${id}`}><button  className='absolute bottom-6 bg-violet-400 px-3 py-1.5 rounded text-white font-semibold text-xl'>View Details</button></Link>
         </div>
     );
 };
