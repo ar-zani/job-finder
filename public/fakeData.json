@@ -1,0 +1,139 @@
+{
+    "category": [
+      {
+        "id": 1,
+        "title": "Account & Finance",
+        "available_jobs": 250,
+        "logo": "assets/icons/accounts.png"
+      },
+      {
+        "id": 2,
+        "title": "Creative Design",
+        "available_jobs": 150,
+        "logo": "assets/icons/business.png"
+      },
+      {
+        "id": 3,
+        "title": "Marketing & Sales",
+        "available_jobs": 100,
+        "logo": "assets/icons/social.png"
+      },
+      {
+        "id": 4,
+        "title": "Engineering Job",
+        "available_jobs": 80,
+        "logo": "assets/icons/chip.png"
+      }
+    ],
+    "jobs": [
+        {
+          "id": 1,
+          "job_title": "Software Engineer",
+          "company_name": "Airbnb Inc.",
+          "logo": "assets/logo/airbnb.png",
+          "job_description": "We are seeking a skilled Software Engineer to join our dynamic team and contribute to the development of cutting-edge software solutions. In this role, you will be responsible for designing, coding, testing, and debugging software applications. You will collaborate with cross-functional teams to deliver high-quality software products that meet customer needs and business requirements.",
+          "job_responsibility": "Design and develop software applications using languages and technologies such as Java, Python, and JavaScript. Collaborate with product managers and designers to understand requirements and translate them into technical specifications. Write clean, efficient, and maintainable code that follows best practices. Conduct unit and integration testing to ensure software quality and reliability. Debug and resolve software defects and issues. Collaborate with cross-functional teams, including QA engineers, to deliver software on time and meet project milestones. Stay updated with industry trends and emerging technologies to drive innovation within the team. Participate in code reviews and provide constructive feedback to team members.",
+          "educational_requirements": "Bachelor's degree in Computer Science or related field",
+          "experiences": "2+ years of software development experience",
+          "contact": {
+            "address": "123 Tech Street, Cityville",
+            "phone": "+1-123-456-7890",
+            "email": "techcareers@example.com"
+          },
+          "salary": "$80K- $100K",
+          "job_type": "Full-Time",
+          "work_location": "Onsite"
+        },
+        {
+          "id": 2,
+          "job_title": "Data Analyst",
+          "company_name": "Netflix Inc.",
+          "logo": "assets/logo/netflix.png",
+          "job_description": "Join our team as a Data Analyst and play a crucial role in analyzing and interpreting data to provide insights that drive business decisions. In this role, you will work with large datasets, perform data cleaning, analysis, and visualization, and collaborate with cross-functional teams to deliver data-driven recommendations and solutions.",
+          "job_responsibility": "Collect, clean, and preprocess large datasets from various sources. Perform exploratory data analysis to identify trends, patterns, and correlations. Develop and implement data models, algorithms, and statistical analyses. Create data visualizations and reports to communicate findings to stakeholders. Collaborate with business analysts, product managers, and data engineers to define data requirements. Identify opportunities for process improvement and automation. Stay updated with data analytics tools and techniques to enhance data analysis capabilities.",
+          "educational_requirements": "Bachelor's degree in Statistics, Mathematics, or related field",
+          "experiences": "1+ years of data analysis experience",
+          "contact": {
+            "address": "456 Data Avenue, Datatown",
+            "phone": "+1-234-567-8901",
+            "email": "datateam@example.com"
+          },
+          "salary": "$60K- $80K",
+          "job_type": "Contract",
+          "work_location": "Remote"
+        },
+        {
+          "id": 3,
+          "job_title": "Network Administrator",
+          "company_name": "Tesla Inc.",
+          "logo": "assets/logo/tesla.png",
+          "job_description": "Tesla is seeking a skilled Network Administrator to manage our network infrastructure and ensure the reliable operation of our communication and information systems. In this role, you will be responsible for monitoring network performance, troubleshooting issues, and implementing security measures to protect sensitive data.",
+          "job_responsibility": "Monitor and maintain the organization's network infrastructure, including routers, switches, and firewalls. Troubleshoot network issues and ensure network performance and availability. Implement and manage network security measures to protect against unauthorized access and cyber threats. Configure and optimize network hardware and software. Collaborate with cross-functional teams to ensure smooth network operation. Provide technical support and guidance to end-users on network-related issues. Stay updated with industry best practices and emerging technologies in network administration.",
+          "educational_requirements": "Bachelor's degree in IT, Computer Science, or related field",
+          "experiences": "3+ years of network administration experience",
+          "contact": {
+            "address": "789 Network Lane, Networkville",
+            "phone": "+1-345-678-9012",
+            "email": "networkjobs@example.com"
+          },
+          "salary": "$70K- $90K",
+          "job_type": "Full-Time",
+          "work_location": "Hybrid"
+        },
+        {
+          "id": 4,
+          "job_title": "UI/UX Designer",
+          "company_name": "Google LLC",
+          "logo": "assets/logo/google.png",
+          "job_description": "Are you a creative UI/UX Designer passionate about creating stunning user experiences? Join us to design intuitive and visually appealing user interfaces that delight users across web and mobile platforms. In this role, you will work closely with product managers and developers to bring user-centered designs to life.",
+          "job_responsibility": "Collaborate with product managers and stakeholders to understand user requirements and business goals. Design and create wireframes, mockups, and prototypes for user interfaces. Develop user-centered design concepts and solutions that deliver a seamless and engaging user experience. Conduct user research, usability testing, and gather feedback to iterate on design concepts. Work closely with development teams to ensure design feasibility and implementation. Create visually appealing graphics, icons, and other design elements. Stay updated with UI/UX trends, best practices, and emerging design tools and technologies.",
+          "educational_requirements": "Bachelor's degree in Design, Human-Computer Interaction, or related field",
+          "experiences": "2+ years of UI/UX design experience",
+          "contact": {
+            "address": "567 Design Road, Designville",
+            "phone": "+1-456-789-0123",
+            "email": "designjobs@example.com"
+          },
+          "salary": "$70K- $90K",
+          "job_type": "Full-Time",
+          "work_location": "Onsite"
+        },
+        {
+          "id": 5,
+          "job_title": "Cybersecurity Analyst",
+          "company_name": "Airbnb Inc.",
+          "logo": "assets/logo/airbnb.png",
+          "job_description": "Join our cybersecurity team to protect our organization from cyber threats and ensure data security. In this role, you will monitor security alerts, conduct vulnerability assessments, and implement security measures to safeguard sensitive information and maintain the integrity of our systems.",
+          "job_responsibility": "Monitor security alerts and incidents to identify and respond to potential threats. Conduct vulnerability assessments and penetration testing to identify and address security vulnerabilities. Implement and manage security solutions such as firewalls, intrusion detection systems, and anti-virus software. Develop and maintain cybersecurity policies, procedures, and best practices. Collaborate with IT teams to ensure security measures are integrated into the organization's systems and infrastructure. Stay updated with the latest cybersecurity trends, threats, and technologies. Provide training and awareness programs to educate employees about cybersecurity best practices.",
+          "educational_requirements": "Bachelor's degree in Cybersecurity, IT, or related field",
+          "experiences": "3+ years of cybersecurity experience",
+          "contact": {
+            "address": "123 Security Lane, Securetown",
+            "phone": "+1-567-890-1234",
+            "email": "cyberjobs@example.com"
+          },
+          "salary": "$75K- $95K",
+          "job_type": "Full-Time",
+          "work_location": "Onsite"
+        },
+        {
+          "id": 6,
+          "job_title": "DevOps Engineer",
+          "company_name": "Netflix Inc.",
+          "logo": "assets/logo/netflix.png",
+          "job_description": "Join Netflix as a DevOps Engineer to optimize our software development process and enhance the efficiency and reliability of our infrastructure. In this role, you will automate deployment pipelines, collaborate with development teams, and implement tools and practices that support continuous integration and delivery.",
+          "job_responsibility": "Collaborate with development teams to design and implement automated deployment pipelines. Configure and manage infrastructure as code using tools such as Terraform and Kubernetes. Monitor system performance and implement optimizations to ensure high availability and scalability. Troubleshoot and resolve issues related to deployment, availability, and performance. Implement and maintain CI/CD processes and tools. Collaborate with cross-functional teams to ensure smooth software releases and updates. Stay updated with DevOps practices, tools, and emerging technologies.",
+          "educational_requirements": "Bachelor's degree in Computer Science, Engineering, or related field",
+          "experiences": "2+ years of DevOps or software engineering experience",
+          "contact": {
+            "address": "789 DevOps Street, DevOpsville",
+            "phone": "+1-678-901-2345",
+            "email": "devopsjobs@example.com"
+          },
+          "salary": "$80K- $100K",
+          "job_type": "Full-Time",
+          "work_location": "Hybrid"
+        }
+      ]
+  }
+  
