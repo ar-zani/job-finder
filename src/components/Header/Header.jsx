@@ -16,7 +16,7 @@ const Header = () => {
             : <Bars4Icon className='w-8 ms-auto'></Bars4Icon>}
         </div>
         <div>
-          <ul onClick={() => setIsOpen(!isOpen)} className={`duration-500 block right-3 bg-white  text-center md:mt-0 w-full absolute md:static md:flex font-medium top-14 -mt-1 text-gray-400 md:order-2 ${isOpen ? ' ' : ' -right-full'}`}>
+          <ul onClick={() => setIsOpen(!isOpen)} className={`duration-500 block bg-white text-center md:mt-0 w-full absolute md:static md:flex font-medium top-14 -mt-1 text-gray-400 md:order-2 ${isOpen ? ' right-3 ': ' -right-full '}`}>
             <li><ActiveLink to='/home'>Home</ActiveLink></li>
             <li><ActiveLink to='/applied-job'>Applied Jobs</ActiveLink></li>
             <li><ActiveLink to='/statistics'>Statistics</ActiveLink></li>
