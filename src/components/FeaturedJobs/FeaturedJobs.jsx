@@ -16,17 +16,17 @@ const FeaturedJobs = () => {
     },[seeMore])
     
     return (
-        <div className='py-10'>
+        <div id='jobs' className='py-10'>
             <h3 className='text-center text-4xl font-bold'>Job Category List</h3>
             <p className='text-center py-5 text-gray-500'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-            <div className="grid md:grid-cols-2 py-10 gap-8">
+            <div className="grid md:grid-cols-2 py-10 gap-8 w-11/12 m-auto md:w-auto">
                 {
                     jobs.map(job=> <JobCard data={job} key={job.id}></JobCard>)
                 }
             </div>
             {
                 seeMore || <div className='text-center'>
-                <button onClick={()=> setSeeMore(true)} className='bg-violet-400 px-4 py-2.5 rounded-md text-white font-semibold text-xl'>See All Jobs</button>
+                <button onClick={()=> setSeeMore(true)} className='bg-violet-400 px-4 py-2.5 rounded-md text-white font-semibold lg:text-xl'>See All Jobs</button>
                 </div>
             }
             

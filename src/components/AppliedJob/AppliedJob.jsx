@@ -16,23 +16,25 @@ const AppliedJob = () => {
         loadData();
     }, [])
     useEffect(() => {
-        const ids = Object.keys(getDatabaseData())
-        let addedjob = [];
-        ids.forEach(id => {
-            const job = jobs.find(jobb=> jobb.id===parseInt(id))
-            addedjob.push(job);
-        })
-        setAppliedJobs(addedjob);
+        if (jobs.length > 0) {
+            const ids = Object.keys(getDatabaseData())
+            let addedJob = [];
+            ids.forEach(id => {
+                const job = jobs.find(jobb => jobb.id === parseInt(id))
+                addedJob.push(job);
+            })
+            setAppliedJobs(addedJob);
+        }
     }, [jobs])
-    
+
 
     return (
-        <div>
+        <div className="pt-30">
             <h2 className="py-20 bg-slate-50 text-3xl font-bold text-center">
-                {appliedJobs.length===0 ? 'No job applications have been made' :'Applied Jobs'}</h2>
-            <div className='w-8/12 m-auto grid gap-8 mt-10'>
+                {appliedJobs.length === 0 ? 'No job applications have been made' : 'Applied Jobs'}</h2>
+            <div className='md:w-10/12 lg:w-8/12 m-auto grid place-content-center gap-8 mt-10'>
                 {
-                    appliedJobs.map((job,idx)=> <AppliedJobCard key={idx} data={job}></AppliedJobCard>)
+                    appliedJobs?.map((job) => <AppliedJobCard key={job.id} data={job}></AppliedJobCard>)
                 }
             </div>
 

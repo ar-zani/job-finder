@@ -1,19 +1,31 @@
 import './Header.css'
 import ActiveLink from '../ActiveLink/ActiveLink';
+import { Bars4Icon, XMarkIcon } from '@heroicons/react/24/solid'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-    return (
-        <nav className='flex justify-between py-4 items-center w-8/12 m-auto'>
-            <h2 className='text-3xl font-bold'>JobFinder</h2>
-            <div className=' font-medium text-gray-400'>
-                <ActiveLink to='/home'>Home</ActiveLink>
-                <ActiveLink to='/applied-job'>Applied Jobs</ActiveLink>
-                <ActiveLink to='/statistics'>Statistics</ActiveLink>
-                <ActiveLink to='/blog'>Blog</ActiveLink>
-            </div>
-            <button className='bg-violet-400 px-5 py-4 rounded-lg text-white font-semibold text-xl'>Start Applying</button>
-        </nav>
-    );
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <nav className='flex justify-between py-2 md:py-4 md:items-center w-full px-7 md:px-0 md:w-10/12 lg:w-8/12 m-auto fixed top-0 left-0 right-0 bg-white z-50'>
+      <Link to='/home'><h2 className='text-2xl md:text-3xl font-bold'>JobFinder</h2></Link>
+      <Link to='/home#jobs' className='bg-violet-400 p-2 lg:p-3 rounded-lg text-white font-semibold text-sm lg:text-xl md:order-1'><button className=''>Start Applying</button></Link>
+      <div>
+        <div className='md:hidden' onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <XMarkIcon className='w-8 ms-auto'></XMarkIcon>
+            : <Bars4Icon className='w-8 ms-auto'></Bars4Icon>}
+        </div>
+        <div>
+          <ul onClick={() => setIsOpen(!isOpen)} className={`duration-500 block right-3 bg-white  text-center md:mt-0 w-full absolute md:static md:flex font-medium top-14 -mt-1 text-gray-400 md:order-2 ${isOpen ? ' ' : ' -right-full'}`}>
+            <li><ActiveLink to='/home'>Home</ActiveLink></li>
+            <li><ActiveLink to='/applied-job'>Applied Jobs</ActiveLink></li>
+            <li><ActiveLink to='/statistics'>Statistics</ActiveLink></li>
+            <li><ActiveLink to='/blog'>Blog</ActiveLink></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 };
 
 export default Header;
